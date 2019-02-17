@@ -30,17 +30,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //init image
-        image = BitmapFactory.decodeResource(getResources(), R.drawable.sample);
+        image = BitmapFactory.decodeResource(getResources(), R.drawable.sample2);
 
         //initialize Tesseract API
 //        String language = "eng";
         String language = "hin";
+//          String language = "tam";
+//        String language = "deu";
         datapath = getFilesDir()+ "/tesseract/";
         mTess = new TessBaseAPI();
 
         checkFile(new File(datapath + "tessdata/"));
 
-        mTess.init(datapath, language);
+        mTess.init(datapath, language, TessBaseAPI.OEM_TESSERACT_ONLY);
     }
 
     public void processImage(View view){
@@ -90,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
             if (!file.exists()) {
                 throw new FileNotFoundException();
             }
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

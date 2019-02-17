@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Android_Tesseract-master.iml" filepath="$PROJECT_DIR$/Android_Tesseract-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tesseract-Hindi.iml" filepath="$PROJECT_DIR$/Tesseract-Hindi.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
